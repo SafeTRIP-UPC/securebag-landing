@@ -6,7 +6,7 @@
   <section id="about-us" class="about-us">
     <div class="container_about-us">
       <h1 style="font-size: 2rem;">ABOUT US</h1>
-      <p>Mira el video acerca de SecureBag</p>
+      <h3 style="margin-bottom: 1rem;">Mira el video acerca de SafeTRIP</h3>
       <Button class="button" label="GitHub" text plain>
         <i class="pi pi-github"></i>
         <a href="https://github.com/WilverAR" class="contact-button">GitHub</a>

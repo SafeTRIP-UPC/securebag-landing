@@ -10,7 +10,7 @@ import Footer from '../components/Footer.vue';
   <section id="main" class="main">
       <div class="container_main">
         <div class="container_content">
-          <h1 class="container_title">Travel Worry Free with SafeTrip</h1>
+          <h1 class="container_title">Travel Worry Free with SecureBag</h1>
           <div class="container_info">
             The easiest way to insure your luggage and enjoy peace of mind while traveling.
             Secure your luggage with SafeTrip. Instant quotes and easy management through our app for stress-free travel.

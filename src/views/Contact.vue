@@ -6,7 +6,7 @@
   <section id="contact" class="contact">
     <div class="container_contact">
       <h1>CONTACT US FOR MORE NEWS</h1>
-      <p>Do you have any questions or want to know more about SecureBag?</p>
+      <h4>Do you have any questions or want to know more about SecureBag?</h4>
       <p>Send us an email and we will respond as soon as possible.</p>
       <Button class="button" label="Contact" text plain>
         <i class="pi pi-envelope"></i>

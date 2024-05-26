@@ -48,7 +48,7 @@ const closeMenu = () => {
         <template #start>
           <img src="../assets/images/logo.png" alt="logo" height="50"/>
           <div class="container_title">
-            Safe<span class="bordered-text" style="color: rgb(44, 131, 141);">TRIP</span>
+            Secure<span class="bordered-text" style="color: rgb(44, 131, 141);">BAG</span>
           </div>
         </template>
         <template #center>

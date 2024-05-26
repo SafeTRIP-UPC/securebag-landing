@@ -21,8 +21,8 @@ onMounted(() => {
     <div class="container_footer">
       <div class="container_content">
         <div class="start">
-          <h1>Secure<span style="color: mediumspringgreen;">TRIP</span></h1>
-          <p>SafeTrip | Safe and Comfortable Trips | We innovate the travel experience with advanced technology so you can enjoy each adventure with comfort and safety.</p>
+          <h1>Secure<span style="color: mediumspringgreen;">BAG</span></h1>
+          <p>SecureBag | Safe and Comfortable Trips | We innovate the travel experience with advanced technology so you can enjoy each adventure with comfort and safety.</p>
           <div class="social_networks">
             <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
               <i class="pi pi-facebook"></i>
@@ -63,7 +63,7 @@ onMounted(() => {
       </div>
       <hr style="width: 100%">
       <div class="container_copyright">
-        <span>© 2024 SecureTRIP. All rights reserved.</span>
+        <span>© 2024 SecureBag. All rights reserved.</span>
       </div>
     </div>
   </section>

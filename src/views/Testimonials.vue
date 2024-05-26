@@ -18,7 +18,7 @@
             <i class="fa-solid fa-star"></i>
           </div>
           <div class="comments">
-            "I had an issue with my luggage on my last trip, and thanks to SafeTrip,
+            "I had an issue with my luggage on my last trip, and thanks to SecureBag,
             I was able to resolve it quickly. The app is super easy to use and gave me the peace of mind I needed.
             I highly recommend it to all travelers!."
           </div>
@@ -36,7 +36,7 @@
         </div>
         <div class="comments">
           "I've never found such an effective solution for insuring my luggage.
-          SafeTrip uses advanced technology that makes the whole process quick and accurate.
+          SecureBag uses advanced technology that makes the whole process quick and accurate.
           It's an app that every traveler should have on their phone."
         </div>
       </div>
@@ -53,7 +53,7 @@
         </div>
         <div class="comments">
           "I've never found such an effective solution for insuring my luggage.
-          SafeTrip uses advanced technology that makes the whole process quick and accurate.
+          SecureBag uses advanced technology that makes the whole process quick and accurate.
           It's an app that every traveler should have on their phone."
         </div>
       </div>

@@ -51,7 +51,7 @@
   <section style="background: rgb(5, 40, 64, 0.1);" class="video">
     <div class="video_title">
       <span>¿HOW DOES SECUREBAG WORK?</span>
-      <h4 style="color: rgb(5, 40, 64);">Watch the video about our product</h4>
+      <h3 style="color: rgb(5, 40, 64);">Watch the video about our product</h3>
     </div>
     <iframe width="1000" height="500" src="https://www.youtube.com/embed/RwU7YY6emYc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </section>
