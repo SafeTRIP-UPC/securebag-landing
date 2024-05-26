@@ -39,7 +39,7 @@ import Footer from '../components/Footer.vue';
 
   <Divider align="center" type="solid"><img src="../assets/images/logo.png" alt="Logo" height="50" /></Divider>
   <Features></Features>
-  <Divider align="center" type="solid"><img src="../assets/images/logo.png" alt="Logo" height="50" /></Divider>
+  <Divider style="background: rgb(5, 40, 64, 0.1);" align="center" type="solid"><img src="../assets/images/logo_divider.png" alt="Logo" height="50" /></Divider>
   <Testimonials></Testimonials>
   <Divider align="center" type="solid"><img src="../assets/images/logo.png" alt="Logo" height="50" /></Divider>
   <Contact></Contact>
@@ -49,6 +49,7 @@ import Footer from '../components/Footer.vue';
 </template>
 
 <style scoped>
+
 .main {
   display: flex;
   flex-direction: column;
@@ -76,9 +77,11 @@ import Footer from '../components/Footer.vue';
 .container_title {
   font-size: 3rem;
   margin-bottom: 1rem;
+  color: rgb(44, 131, 141);
 }
 .container_info {
   font-size: 1.5rem;
+  color: rgb(5, 40, 64);
 }
 .container_buttons {
   justify-content: center;
@@ -120,7 +123,7 @@ import Footer from '../components/Footer.vue';
 }
 .container_scroll {
   padding: 2rem;
-  color: midnightblue;
+  color: rgb(5, 40, 64);
   font-weight: bold;
 }
 
@@ -136,13 +139,18 @@ import Footer from '../components/Footer.vue';
   .container_content {
     width: 60%;
   }
+  .container_title {
+    color: black;
+  }
 }
 @media screen and (max-width: 768px) {
   .container_title {
     font-size: 2rem;
+    color: black;
   }
   .container_info {
     font-size: 1.25rem;
+    color: black;
   }
   .container_main {
     width: 100%;

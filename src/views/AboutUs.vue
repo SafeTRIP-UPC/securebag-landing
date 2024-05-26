@@ -47,9 +47,10 @@
   text-align: center;
   gap: 1rem;
   margin-top: 10rem;
+  color: rgb(5, 40, 64);
 
   h1 {
-    color: midnightblue;
+    color: rgb(44, 131, 141);
   }
   Button {
     display: flex;
@@ -90,9 +91,10 @@
     }
     span {
       font-size: 1.25rem;
+      color: rgb(44, 131, 141);
     }
     p {
-      color: midnightblue;
+      color: rgb(5, 40, 64);
       font-weight: bold;
     }
   }

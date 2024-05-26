@@ -21,7 +21,7 @@ onMounted(() => {
     <div class="container_footer">
       <div class="container_content">
         <div class="start">
-          <h1>Secure<span style="color: mediumspringgreen">TRIP</span></h1>
+          <h1>Secure<span style="color: mediumspringgreen;">TRIP</span></h1>
           <p>SafeTrip | Safe and Comfortable Trips | We innovate the travel experience with advanced technology so you can enjoy each adventure with comfort and safety.</p>
           <div class="social_networks">
             <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">

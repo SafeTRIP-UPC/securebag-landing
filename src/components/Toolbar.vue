@@ -1,11 +1,36 @@
 <script setup>
-import { ref } from 'vue';
+import { ref, onMounted, onBeforeUnmount } from 'vue';
 
 const activeLink = ref('main');
 
 const setActiveLink = (link) => {
   activeLink.value = link;
 };
+
+const handleScroll = () => {
+  const sections = ['main', 'features', 'testimonials', 'about-us'];
+  let currentSection = '';
+
+  for (let section of sections) {
+    const element = document.getElementById(section);
+    const rect = element.getBoundingClientRect();
+
+    if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
+      currentSection = section;
+      break;
+    }
+  }
+
+  activeLink.value = currentSection;
+};
+
+onMounted(() => {
+  window.addEventListener('scroll', handleScroll);
+});
+
+onBeforeUnmount(() => {
+  window.removeEventListener('scroll', handleScroll);
+});
 
 const menuOpen = ref(false);
 const toggleMenu = () => {
@@ -23,7 +48,7 @@ const closeMenu = () => {
         <template #start>
           <img src="../assets/images/logo.png" alt="logo" height="50"/>
           <div class="container_title">
-            Safe<span class="bordered-text" style="color: mediumspringgreen; text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);">TRIP</span>
+            Safe<span class="bordered-text" style="color: rgb(44, 131, 141);">TRIP</span>
           </div>
         </template>
         <template #center>
@@ -78,11 +103,12 @@ const closeMenu = () => {
 
 <style scoped>
 a.active Button {
-  color: blue;
+  color: rgb(44, 131, 141);
+  font-weight: bold;
 }
 .edit {
   backdrop-filter: blur(15px);
-  box-shadow: 0 10px 100px 10px rgba(0, 250, 154, 0.25);
+  box-shadow: 0 5px 10px 1px rgb(0, 0, 0, 0.25);
 }
 .header {
   position: fixed;
@@ -104,24 +130,24 @@ Button {
   color: black;
 }
 Button:hover {
-  color: blue;
+  color: rgb(44, 131, 141);
 }
 .container_download, .container_icon_download {
   justify-content: center;
-  border: 2px solid midnightblue;
+  border: 2px solid rgb(44, 131, 141);
   margin-right: 0.5rem;
   font-weight: bold;
 
   span {
     margin-right: 0.5rem;
-    color: midnightblue;
+    color: rgb(44, 131, 141);
   }
   i {
-    color: midnightblue;
+    color: rgb(44, 131, 141);
   }
 }
 .container_download:hover {
-  background-color: midnightblue;
+  background-color: rgb(44, 131, 141);
 
   span, i {
     color: whitesmoke;
@@ -130,7 +156,7 @@ Button:hover {
 .container_title {
   font-size: 1.5rem;
   font-weight: bold;
-  color: midnightblue;
+  color: black;
 }
 .container_menu {
   display: none;

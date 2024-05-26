@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <section id="testimonials" class="testimonials">
+  <section style="background: rgb(5, 40, 64, 0.1);" id="testimonials" class="testimonials">
     <div class="container_testimony">
       <div class="container_title">TESTIMONIALS</div>
       <div class="testimony">
@@ -59,7 +59,6 @@
       </div>
     </div>
   </section>
-  <Divider align="center" type="solid"><img src="../assets/images/logo.png" alt="Logo" height="50" /></Divider>
   <section id="download" class="downloads">
     <div class="container_downloads">
       <div class="container_image">
@@ -70,7 +69,7 @@
           <span style="font-weight: bold">DOWNLOAD SECUREBAG</span>
         </div>
         <div class="content_info">
-          <p>Download <span style="color: midnightblue; font-weight: bold;">SecureBag</span> travel with peace of mind knowing that your belongings are protected. Our mobile app allows you to quickly and easily quote and manage baggage loss insurance, with automatic item scanning and instant personalized quotes.</p>
+          <p>Download <span style="color: rgb(44, 131, 141); font-weight: bold;">SecureBag</span> travel with peace of mind knowing that your belongings are protected. Our mobile app allows you to quickly and easily quote and manage baggage loss insurance, with automatic item scanning and instant personalized quotes.</p>
         </div>
         <div class="content_buttons">
           <Button class="button" label="Google Play" text plain>
@@ -114,12 +113,12 @@
 .container_content {
   display: flex;
   flex-direction: column;
-  width: 60%;
+  width: 50%;
 }
 .content_title {
   font-size: 2.5rem;
   margin-bottom: 2rem;
-  color: midnightblue;
+  color: rgb(44, 131, 141);
 }
 .content_info {
   font-size: 1.25rem;
@@ -132,6 +131,7 @@
   height: 100%;
   display: flex;
   align-items: center;
+  color: rgb(5, 40, 64);
 }
 .button {
   width: 155px;
@@ -168,7 +168,7 @@
   width: 100%;
   font-size: 2rem;
   font-weight: bold;
-  color: midnightblue;
+  color: rgb(44, 131, 141);
 }
 .testimony {
   flex: 1 1 350px;
@@ -183,9 +183,12 @@
   text-align: center;
   border-radius: 1rem;
   transition: all .3s linear;
+  color: rgb(5, 40, 64);
+  background: whitesmoke;
+  background: rgba(255, 255, 255, 0.7);
 
   h3 {
-    color: midnightblue;
+    color: rgb(44, 131, 141);
   }
   img {
     border-radius: 50%;
@@ -197,7 +200,7 @@
 .icon {
   margin-left: auto;
   font-size: 2rem;
-  color: darkslategray;
+  color: rgb(44, 131, 141);
 }
 .stars {
   color: gold;
@@ -238,6 +241,12 @@
   }
   .testimonials {
     height: 100%;
+  }
+  .content_title {
+    color: rgb(5, 40, 64);
+  }
+  .content_info span {
+    color: rgb(5, 40, 64) !important;
   }
   .container_title {
     margin-top: 5rem;

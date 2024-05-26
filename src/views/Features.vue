@@ -12,46 +12,46 @@
         <div class="container_feature">
           <div class="title">
             <i class="pi pi-check-circle"></i>
-            <span>Comparación de Planes de Seguro</span>
+            <span>Comparison of Insurance Plans</span>
           </div>
           <div class="description">
-            <p>Compara rápidamente entre diferentes planes de seguro para encontrar el que mejor se adapte a tus necesidades y presupuesto.</p>
+            <p>Quickly compare different insurance plans to find the one that best suits your needs and budget.</p>
           </div>
         </div>
         <div class="container_feature">
           <div class="title">
             <i class="pi pi-check-circle"></i>
-            <span>Escaneo y Reconocimiento de Objetos</span>
+            <span>Scanning and Object Recognition</span>
           </div>
           <div class="description">
-            <p>La tecnología de escaneo y reconocimiento de objetos permite a los usuarios capturar y evaluar automáticamente el contenido de su equipaje.</p>
+            <p>Object scanning and recognition technology allows users to automatically capture and evaluate the contents of their luggage.</p>
           </div>
         </div>
         <div class="container_feature">
           <div class="title">
             <i class="pi pi-check-circle"></i>
-            <span>Valoración Automática del Equipaje</span>
+            <span>Automatic Baggage Valuation</span>
           </div>
           <div class="description">
-            <p>La valoración del contenido de tu equipaje se realiza automáticamente, eliminando la necesidad de realizar declaraciones manuales.</p>
+            <p>The assessment of the contents of your luggage is carried out automatically, eliminating the need to make manual declarations.</p>
           </div>
         </div>
         <div class="container_feature">
           <div class="title">
             <i class="pi pi-check-circle"></i>
-            <span>Gestión Personalizada de Pólizas</span>
+            <span>Personalized Policy Management</span>
           </div>
           <div class="description">
-            <p>Ofrece una gestión personalizada de pólizas, adaptada a tus necesidades específicas. Puedes ajustar fácilmente tus coberturas y límites de seguro según tus preferencias.</p>
+            <p>Offers personalized policy management, adapted to your specific needs. You can easily adjust your insurance coverages and limits according to your preferences.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <section class="video">
+  <section style="background: rgb(5, 40, 64, 0.1);" class="video">
     <div class="video_title">
       <span>¿HOW DOES SECUREBAG WORK?</span>
-      <h4>Watch the video about our product</h4>
+      <h4 style="color: rgb(5, 40, 64);">Watch the video about our product</h4>
     </div>
     <iframe width="1000" height="500" src="https://www.youtube.com/embed/RwU7YY6emYc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </section>
@@ -59,7 +59,7 @@
 
 <style scoped>
 .features {
-  background: url('../assets/images/fondo_feature.png') no-repeat left top;
+  background: url('../assets/images/fondo_feature.png') no-repeat left bottom;
 }
 .container_features {
   width: 1280px;
@@ -96,8 +96,9 @@
   box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
   padding: 2rem;
   border-radius: 1rem;
-  color: midnightblue;
-  background-color: rgba(255, 255, 255, 0.75);
+  color: rgb(44, 131, 141);
+  background-color: rgba(255, 255, 255, 0.9);
+  transition: all .3s linear;
 
   i {
     margin-right: 0.5rem;
@@ -108,11 +109,12 @@
   }
   p {
     margin-top: 0.5rem;
-    color: black;
+    color: rgb(5, 40, 64);
   }
 }
 .container_feature:hover {
-  background-color: midnightblue;
+  background-color: rgb(5, 40, 64);
+  transform: scale(0.95);
 
   span, p, i {
     color: whitesmoke;
@@ -131,6 +133,7 @@
 .video, .video_title {
   display: flex;
   flex-direction: column;
+  color: rgb(5, 40, 64);
 }
 .video_title {
   align-items: center;
@@ -140,7 +143,7 @@
   span {
     font-size: 1.5rem;
     font-weight: bold;
-    color: midnightblue;
+    color: rgb(44, 131, 141);
   }
 }
 

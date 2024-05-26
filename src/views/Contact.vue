@@ -5,8 +5,9 @@
 <template>
   <section id="contact" class="contact">
     <div class="container_contact">
-      <h1>CONTACTATE CON NOSOTROS PARA MAS NOVEDADES</h1>
-      <p>¿Tienes alguna pregunta o quieres saber más sobre SecureBag? ¡Nos encantaría saber de ti!</p>
+      <h1>CONTACT US FOR MORE NEWS</h1>
+      <p>Do you have any questions or want to know more about SecureBag?</p>
+      <p>Send us an email and we will respond as soon as possible.</p>
       <Button class="button" label="Contact" text plain>
         <i class="pi pi-envelope"></i>
         <a href="mailto:wilver.ar.dev@gmail.com" class="contact-button">Contact</a>
@@ -28,7 +29,7 @@
   justify-content: center;
   align-items: center;
   color: whitesmoke;
-  gap: 2rem;
+  gap: 1.5rem;
 
   Button {
     display: flex;
