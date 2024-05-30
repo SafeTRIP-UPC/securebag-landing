@@ -46,7 +46,7 @@ const closeMenu = () => {
     <div class="header">
       <Toolbar style="border-radius: 3rem; padding: 1.5rem;" class="edit">
         <template #start>
-          <img src="../assets/images/logo.png" alt="logo" height="50"/>
+          <img src="../assets/images/logo_securebag.png" alt="logo" height="50"/>
           <div class="container_title">
             Secure<span class="bordered-text" style="color: rgb(44, 131, 141);">BAG</span>
           </div>
