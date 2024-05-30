@@ -57,7 +57,7 @@ onMounted(() => {
               <i class="pi pi-map-marker"><span>San Isidro, C. Audiencia 55</span></i>
             </div>
             <div class="logo">
-              <img src="../assets/images/logo.png" alt="Logo" height="100" />
+              <img src="../assets/images/logo_footer.png" alt="Logo" height="150" />
             </div>
         </div>
       </div>
@@ -72,7 +72,7 @@ onMounted(() => {
 <style scoped>
 .footer {
   background: url('../assets/images/footer-fondo.png') no-repeat bottom;
-  height: 50vh;
+  height: 100%;
 }
 .container_footer {
   display: flex;
@@ -87,7 +87,8 @@ onMounted(() => {
   align-items: center;
   height: 100%;
   gap: 10rem;
-  margin-top: 2.5rem;
+  margin: 1rem 0;
+  padding-left: 1.25rem;
 
   i {
     display: flex;
@@ -104,6 +105,7 @@ onMounted(() => {
   flex-direction: column;
   gap: 1rem;
   width: 45%;
+  margin-top: 0.75rem;
 
   div {
     display: flex;
@@ -128,7 +130,7 @@ onMounted(() => {
   flex-direction: column;
   gap: 1rem;
   width: 20%;
-  margin-top: 2.9rem;
+  margin-top: 4rem;
 
   div {
     display: flex;
@@ -174,6 +176,17 @@ onMounted(() => {
   text-align: center;
 }
 
+@media screen and (max-width: 1440px) {
+  .container_footer {
+    width: 1024px;
+  }
+  .container_content {
+    gap: 5rem;
+  }
+  .start {
+    margin-top: 2rem;
+  }
+}
 @media screen and (max-width: 1280px) {
   .footer {
     height: 100%;

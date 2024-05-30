@@ -37,13 +37,13 @@ import Footer from '../components/Footer.vue';
       </div>
   </section>
 
-  <Divider align="center" type="solid"><img src="../assets/images/logo.png" alt="Logo" height="50" /></Divider>
+  <Divider align="center" type="solid"><img src="../assets/images/logo_securebag.png" alt="Logo" height="50" /></Divider>
   <Features></Features>
-  <Divider style="background: rgb(5, 40, 64, 0.1);" align="center" type="solid"><img src="../assets/images/logo_divider.png" alt="Logo" height="50" /></Divider>
+  <Divider style="background: rgb(5, 40, 64, 0.1);" align="center" type="solid"><img src="../assets/images/logo_securebag.png" alt="Logo" height="50" /></Divider>
   <Testimonials></Testimonials>
-  <Divider align="center" type="solid"><img src="../assets/images/logo.png" alt="Logo" height="50" /></Divider>
+  <Divider align="center" type="solid"><img src="../assets/images/logo_securebag.png" alt="Logo" height="50" /></Divider>
   <Contact></Contact>
-  <Divider align="center" type="solid"><img src="../assets/images/logo.png" alt="Logo" height="50" /></Divider>
+  <Divider align="center" type="solid"><img src="../assets/images/logo_securebag.png" alt="Logo" height="50" /></Divider>
   <AboutUs></AboutUs>
   <Footer></Footer>
 </template>
