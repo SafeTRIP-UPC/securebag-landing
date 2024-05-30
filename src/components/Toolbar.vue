@@ -2,12 +2,17 @@
 import { ref, onMounted, onBeforeUnmount } from 'vue';
 
 const activeLink = ref('main');
+const isScrolled = ref(false);
 
 const setActiveLink = (link) => {
   activeLink.value = link;
 };
 
 const handleScroll = () => {
+  const scrollPosition = window.scrollY;
+  const viewportHeight = window.innerHeight;
+  isScrolled.value = scrollPosition > viewportHeight / 2;
+
   const sections = ['main', 'features', 'testimonials', 'about-us'];
   let currentSection = '';
 
@@ -20,7 +25,6 @@ const handleScroll = () => {
       break;
     }
   }
-
   activeLink.value = currentSection;
 };
 
@@ -44,7 +48,7 @@ const closeMenu = () => {
 <template>
   <div class="toolbar">
     <div class="header">
-      <Toolbar style="border-radius: 3rem; padding: 1.5rem;" class="edit">
+      <Toolbar style="border-radius: 3rem; padding: 1.5rem;" class="edit" :class="{ scrolled: isScrolled }">
         <template #start>
           <img src="../assets/images/logo_securebag.png" alt="logo" height="50"/>
           <div class="container_title">
@@ -108,7 +112,11 @@ a.active Button {
 }
 .edit {
   backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.75);
   box-shadow: 0 5px 10px 1px rgb(0, 0, 0, 0.25);
+}
+.edit.scrolled {
+  background: rgba(255, 255, 255, 0.1);
 }
 .header {
   position: fixed;
@@ -159,15 +167,21 @@ Button:hover {
   color: black;
 }
 .container_menu {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
   display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  position: relative;
-  width: 100%;
-  height: 100vh;
   padding: 1rem;
+  z-index: 10;
+  background-color: rgb(44, 131, 141);
+
+  Button {
+    color: whitesmoke;
+  }
 }
 .container_menu.menu-open {
   display: flex;
@@ -198,6 +212,7 @@ Button:hover {
 @media screen and (max-width: 768px) {
   .header {
     width: 95%;
+    margin-top: 0.5rem;
   }
 }
 @media screen and (max-width: 515px) {
@@ -206,6 +221,9 @@ Button:hover {
   }
   .container_icon_download {
     display: flex;
+  }
+  .header {
+    margin-top: 0.5rem;
   }
 }
 </style>

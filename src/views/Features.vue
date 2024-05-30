@@ -9,6 +9,7 @@
         <img src="../assets/images/cell.png" alt="Logo" height="550" />
       </div>
       <div class="container_content">
+        <div class="container_title">FEATURES</div>
         <div class="container_feature">
           <div class="title">
             <i class="pi pi-check-circle"></i>
@@ -60,6 +61,7 @@
 <style scoped>
 .features {
   background: url('../assets/images/fondo_feature.png') no-repeat left bottom;
+  height: 100%;
 }
 .container_features {
   width: 1280px;
@@ -84,10 +86,15 @@
     transform: translateY(-3.5rem);
   }
 }
+.container_title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: rgb(44, 131, 141);
+}
 .container_content {
   display: flex;
   flex-direction: column;
-  margin-top: 5rem;
   padding: 5rem;
   width: 60%;
 }

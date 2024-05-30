@@ -5,12 +5,12 @@
 <template>
   <section id="contact" class="contact">
     <div class="container_contact">
-      <h1>CONTACT US FOR MORE NEWS</h1>
+      <h1>CONTACT US FOR MORE INFORMATION</h1>
       <h4>Do you have any questions or want to know more about SecureBag?</h4>
-      <p>Send us an email and we will respond as soon as possible.</p>
-      <Button class="button" label="Contact" text plain>
+      <p>Send us an email and we'll get back to you as soon as possible.</p>
+      <Button class="button" label="Contact" text plain onclick="window.open('https://mail.google.com/mail/?view=cm&fs=1&to=wilver.ar.dev@gmail.com&su=INQUIRY%20ABOUT%20SECUREBAG', 'target_blank');">
         <i class="pi pi-envelope"></i>
-        <a href="mailto:wilver.ar.dev@gmail.com" class="contact-button">Contact</a>
+        <a class="contact-button">Contact</a>
       </Button>
     </div>
   </section>
@@ -19,7 +19,8 @@
 <style scoped>
 .contact {
   background: url('../assets/images/fondo_sub.png') no-repeat center;
-  height: 55vh;
+  background-size: 150% 75%;
+  height: 75vh;
 }
 .container_contact {
   width: 1280px;
