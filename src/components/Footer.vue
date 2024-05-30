@@ -74,9 +74,9 @@ onMounted(() => {
         </div>
       </div>
       <hr style="width: 100%">
-      <div class="container_copyright">
-        <div class="link_footer"><a>Terms and Conditions&ensp;</a></div>|
-        <div class="link_footer"><a>&ensp;Privacy Policy&ensp;</a></div>|
+      <div class="container_copyright flex align-items-center">
+        <div class="link_footer"><span>Terms and Conditions&ensp;</span></div>|
+        <div class="link_footer"><span>&ensp;Privacy Policy&ensp;</span></div>|
         <span>&ensp;© 2024 SecureBag. All rights reserved.</span>
       </div>
     </div>
@@ -255,10 +255,18 @@ onMounted(() => {
   .container_footer {
     width: 420px;
   }
+  .container_copyright {
+    flex-direction: column;
+    gap: 1rem;
+  }
 }
 @media screen and (max-width: 425px) {
   .container_footer {
     width: 375px;
+  }
+  .container_copyright {
+    flex-direction: column;
+    gap: 1rem;
   }
 }
 </style>

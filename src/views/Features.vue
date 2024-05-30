@@ -61,6 +61,7 @@
 <style scoped>
 .features {
   background: url('../assets/images/fondo_feature.png') no-repeat left bottom;
+  height: 100%;
 }
 .container_features {
   width: 1280px;
@@ -94,7 +95,6 @@
 .container_content {
   display: flex;
   flex-direction: column;
-  margin-top: 5rem;
   padding: 5rem;
   width: 60%;
 }

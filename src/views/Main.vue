@@ -13,7 +13,7 @@ import Footer from '../components/Footer.vue';
           <h1 class="container_title">Travel Worry Free with SecureBag</h1>
           <div class="container_info">
             The easiest way to insure your luggage and enjoy peace of mind while traveling.
-            Secure your luggage with SafeTrip. Instant quotes and easy management through our app for stress-free travel.
+            Secure your luggage with SafeTrip. <span>Instant quotes and easy management through our app for stress-free travel.</span>
           </div>
           <div class="container_buttons">
             <Button class="button" label="Google Play" text plain>
@@ -118,7 +118,7 @@ import Footer from '../components/Footer.vue';
     transform: translateY(0rem);
   }
   50% {
-    transform: translateY(-3.5rem);
+    transform: translateY(-2.5rem);
   }
 }
 .container_scroll {
@@ -127,34 +127,57 @@ import Footer from '../components/Footer.vue';
   font-weight: bold;
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1440px) {
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
   .container_main {
     width: 1024px;
   }
+  .container_scroll {
+    margin-bottom: 2rem;
+  }
 }
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
   .container_main {
     width: 768px;
   }
   .container_content {
-    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0;
   }
   .container_title {
     color: black;
+    font-size: 2.5rem;
+  }
+  .container_info span {
+    display: none;
+  }
+  .container_image {
+    padding: 0;
+
+    img {
+      height: 450px;
+    }
   }
 }
 @media screen and (max-width: 768px) {
   .container_title {
     font-size: 2rem;
-    color: black;
+    color: whitesmoke;
+    padding-top: 5rem;
   }
   .container_info {
-    font-size: 1.25rem;
+    font-size: 1rem;
     color: black;
+
+    span {
+      display: none;
+    }
   }
   .container_main {
     width: 100%;
     flex-direction: column;
+    padding: 0;
   }
   .container_content {
     width: 100%;
@@ -164,31 +187,43 @@ import Footer from '../components/Footer.vue';
   .container_buttons {
     width: 100%;
   }
+  .container_image img {
+    height: 300px;
+    margin-top: 1rem;
+  }
   .container_image {
-    img {
-      height: 400px;
-    }
+    margin-top: 7.5rem;
   }
 }
 @media screen and (max-width: 500px) {
-  .container_image {
-    img {
-      height: 300px;
-    }
-  }
   .container_scroll {
+    display: flex;
+    position: absolute;
+    bottom: 0;
     padding: 0;
-    margin: 0;
   }
   .container_buttons {
     display: flex;
     align-items: center;
   }
   .container_title {
-    margin: 0;
+    padding-top: 2.5rem;
+    color: whitesmoke;
   }
   .container_content {
     margin: 0;
+    padding: 0;
+  }
+  .container_info span {
+    display: none;
+  }
+  .container_image img {
+    height: 275px;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+  }
+  .container_image {
+    margin-top: 5rem;
   }
 }
 </style>

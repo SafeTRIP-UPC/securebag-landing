@@ -19,8 +19,8 @@
 <style scoped>
 .contact {
   background: url('../assets/images/fondo_sub.png') no-repeat center;
-  background-size: 150% 55%;
-  height: 55vh;
+  background-size: 150% 75%;
+  height: 75vh;
 }
 .container_contact {
   width: 1280px;
