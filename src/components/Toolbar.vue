@@ -159,15 +159,21 @@ Button:hover {
   color: black;
 }
 .container_menu {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
   display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  position: relative;
-  width: 100%;
-  height: 100vh;
   padding: 1rem;
+  z-index: 10;
+  background-color: rgb(44, 131, 141);
+
+  Button {
+    color: whitesmoke;
+  }
 }
 .container_menu.menu-open {
   display: flex;

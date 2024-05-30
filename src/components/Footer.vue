@@ -52,9 +52,21 @@ onMounted(() => {
         <div class="end">
             <div class="address">
               <h1>Information</h1>
-              <i class="pi pi-whatsapp"><span>922-529-107</span></i>
-              <i class="pi pi-envelope"><span>wilver.ar.dev@gmail.com</span></i>
-              <i class="pi pi-map-marker"><span>San Isidro, C. Audiencia 55</span></i>
+              <div class="link_info">
+                <a href="https://wa.me/51922529107?text=Hello%20SecureBag%20Team%2C%20I%20would%20like%20to%20inquire%20about%20your%20product.%20Could%20you%20please%20provide%20more%20information%3F%20Thank%20you." target="_blank" style="text-decoration: none; color: inherit;">
+                  <i class="pi pi-whatsapp"><span>922 529 107</span></i>
+                </a>
+              </div>
+              <div class="link_info">
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=wilver.ar.dev@gmail.com&su=INQUIRY%20ABOUT%20SECUREBAG" target="_blank" style="text-decoration: none; color: inherit;">
+                  <i class="pi pi-envelope"><span>wilver.ar.dev@gmail.com</span></i>
+                </a>
+              </div>
+              <div class="link_info">
+                <a href="https://www.google.com/maps?q=San+Isidro,+C.+Audiencia+55" target="_blank" style="text-decoration: none; color: inherit;">
+                  <i class="pi pi-map-marker"><span>San Isidro, C. Audiencia 55</span></i>
+                </a>
+              </div>
             </div>
             <div class="logo">
               <img src="../assets/images/logo_footer.png" alt="Logo" height="150" />
@@ -63,7 +75,9 @@ onMounted(() => {
       </div>
       <hr style="width: 100%">
       <div class="container_copyright">
-        <span>© 2024 SecureBag. All rights reserved.</span>
+        <div class="link_footer"><a>Terms and Conditions&ensp;</a></div>|
+        <div class="link_footer"><a>&ensp;Privacy Policy&ensp;</a></div>|
+        <span>&ensp;© 2024 SecureBag. All rights reserved.</span>
       </div>
     </div>
   </section>
@@ -73,6 +87,7 @@ onMounted(() => {
 .footer {
   background: url('../assets/images/footer-fondo.png') no-repeat bottom;
   height: 100%;
+  background-size: cover;
 }
 .container_footer {
   display: flex;
@@ -114,6 +129,7 @@ onMounted(() => {
     a {
       text-decoration: none;
       color: inherit;
+
 
       i {
         transition: transform 0.5s ease;
@@ -167,13 +183,27 @@ onMounted(() => {
         font-size: 1rem;
         margin-left: 1rem;
         color: whitesmoke;
+        font-family: "Radio Canada", sans-serif;
       }
     }
   }
 }
 .container_copyright {
+  display: flex;
   margin: 2rem 0;
   text-align: center;
+}
+.link_info {
+  transition: all .3s linear;
+}
+.link_footer {
+  color: mediumspringgreen;
+  transition: all .3s linear;
+}
+.link_footer:hover, .link_info:hover {
+  color: whitesmoke;
+  transform: scale(0.90);
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1440px) {
@@ -228,7 +258,7 @@ onMounted(() => {
 }
 @media screen and (max-width: 425px) {
   .container_footer {
-    width: 300px;
+    width: 375px;
   }
 }
 </style>

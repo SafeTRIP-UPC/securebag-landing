@@ -184,7 +184,6 @@
   border-radius: 1rem;
   transition: all .3s linear;
   color: rgb(5, 40, 64);
-  background: whitesmoke;
   background: rgba(255, 255, 255, 0.7);
 
   h3 {
