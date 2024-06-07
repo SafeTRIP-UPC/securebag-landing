@@ -216,6 +216,9 @@ Button:hover {
   }
 }
 @media screen and (max-width: 515px) {
+  .container_title {
+    font-size: 1.25rem;
+  }
   .container_download {
     display: none;
   }
@@ -224,6 +227,11 @@ Button:hover {
   }
   .header {
     margin-top: 0.5rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .container_title {
+    display: none;
   }
 }
 </style>
