@@ -18,13 +18,13 @@
           <span>Wilver Arana R.</span>
           <p>@WilverAR</p>
         </div>
-        <div class="profile" onclick="window.open('https://github.com/WilverAR', 'target_blank');">
-          <img src="../assets/images/profile_wilver.png" alt="Alejandro" width="125" height="125"/>
+        <div class="profile" onclick="window.open('https://github.com/AlejandroNolasco', 'target_blank');">
+          <img src="https://avatars.githubusercontent.com/u/44596749?v=4" alt="Alejandro" width="125" height="125"/>
           <span>Alejandro Nolasco M.</span>
           <p>@AlejandroNM</p>
         </div>
-        <div class="profile" onclick="window.open('https://github.com/WilverAR', 'target_blank');">
-          <img src="../assets/images/profile_wilver.png" alt="Luis" width="125" height="125"/>
+        <div class="profile" onclick="window.open('https://github.com/Prado71', 'target_blank');">
+          <img src="https://avatars.githubusercontent.com/u/83568062?v=4" alt="Luis" width="125" height="125"/>
           <span>Luis Prado V.</span>
           <p>@LuisPV</p>
         </div>
